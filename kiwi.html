@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="kiwi.css">
+</head>
+<body>
+    <div id="firstvisitpage">
+        <div class="box">
+            <h1>🥝Welcome to Kiwi!</h1>
+            <p>Kiwi is a web application that allows you to create and manage your tasks efficiently. <br> With Kiwi, you can easily organize your to-do list, set reminders, and track your progress.</p>
+            <input type="text" id="username" placeholder="What should we call you?">
+            <button id="getstarted">Lets'goo!!</button>
+            <p id="error-message" class="error-hidden">Please enter your name to get started.</p>
+        </div>
+
+    </div>
+
+    <div id="main-section" style="display: none;">
+        <div class="header">
+            <h1> 🥝 KIWI 🥝 </h1>
+  <p>Hello, <span id="display-name"></span>!</p>
+  </div>
+<div class="top-row">
+
+    <div class="card">
+      <p class="label">Live Clock</p>
+      <h2 id="live-clock">00:00:00</h2>
+      <p id="live-date">Mon, 1 Jan</p>
+    </div>
+
+    <div class="card">
+      <p class="label">Calendar</p>
+      <div id="calendar"></div>
+    </div>
+
+    <div class="card">
+      <p class="label">Streak</p>
+      <p id="streak-count">🔥 0 days</p>
+      <p class="label">Today's Progress</p>
+      <div class="progress-bg">
+        <div id="progress-bar"></div>
+      </div>
+      <p id="progress-text">0 / 0 done</p>
+    </div>
+
+  </div>
+
+  <div class="quote-card">
+    <p class="label">Daily Quote</p>
+    <p id="daily-quote">Loading...</p>
+  </div>
+
+  <div class="bottom-row">
+
+    <div class="card">
+      <h2>My Habits</h2>
+      <div class="add-form">
+        <input type="text" id="habit-input" placeholder="Add a habit..." />
+        <select id="category-select">
+          <option value="💪 Fitness">💪 Fitness</option>
+          <option value="📚 Study">📚 Study</option>
+          <option value="🧘 Health">🧘 Health</option>
+          <option value="💧 Hydration">💧 Hydration</option>
+          <option value="😴 Sleep">😴 Sleep</option>
+          <option value="⚙️ Custom">⚙️ Custom</option>
+        </select>
+        <button id="add-habit-btn">+ Add</button>
+      </div>
+      <p id="habit-error" class="error-hidden">Please enter a habit!</p>
+      <ul id="habit-list"></ul>
+    </div>
+
+    <div class="card">
+      <h2>My Tasks</h2>
+      <div class="add-form">
+        <input type="text" id="task-input" placeholder="Add a task..." />
+        <select id="priority-select">
+          <option value="🔴 High">🔴 High</option>
+          <option value="🟠 Medium">🟠 Medium</option>
+          <option value="🟢 Low">🟢 Low</option>
+        </select>
+        <button id="add-task-btn">+ Add</button>
+      </div>
+      <p id="task-error" class="error-hidden">Please enter a task!</p>
+      <ul id="task-list"></ul>
+    </div>
+
+  </div>
+
+
+</div>
+<script src="kiwi.js"></script>  
+</body>
+</html>
